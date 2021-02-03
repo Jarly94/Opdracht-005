@@ -1,69 +1,84 @@
-/* Element Selector */
 body {
+    margin: 2%;
     background-color: grey;
     color:black;
     font-family: Georgia, 'Times New Roman', Times, serif
 }
 
+/* Header */
+header {
+    border: 5px dotted;
+    border-radius: 10px;
+    width: 500px;
+    margin: auto;
+    padding: 5px 5px;
+}
+
 header h1 {
-    margin: 10px;
-    padding: 20px
+    margin: 10px 10px;
+    padding: 20px;
+    text-align: center;
 }
 
-a:hover {
-    color: azure;
-}
-
-hr {
-    margin: 10px 0 10px 0;
+/* Navigation */
+div a:hover {
+    color: white;
 }
 
 nav {
     margin: 15px ;
 }
+
 nav h3 {
     text-align: center;
     margin: 0;
 }
-
-/* Class Selector */
 
 .navigation {
     text-align: center;
     text-decoration: none;
 }
 
-.navigation a{
+.navigation a {
     color: goldenrod;
 }
 
-.border {
+/* Main */
+.favorites{
     border: 5px solid;
     border-radius: 10px;
+    width: 375px;
 }
 
-.border header{
-    margin: 20px 0 20px 40px ;
+.favorites h2 {
+    margin: 20px;
 }
 
-.border main{
-    padding:  20px ;
+.favorites ul {
+    list-style: square;
 }
 
-.footerBox {
-    /* margin: 30px; */
+.aboutMe main {
+    width: 300px;
+    border: 5px solid;
 }
-.footerBox h3 {
-    margin: 40px;
+
+.aboutMe img{
+    
+}
+/* Footer */
+footer h3 {
+    margin: 25px;
     text-align: center;
 }
 
-.footerBox p {
-    padding: 50px;
+footer p {
+    padding: 5px;
     text-align: center;
 }
 
 .contacts {
+    padding-bottom: 50px;
     text-align: center;
 }
 
