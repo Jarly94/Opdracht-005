@@ -1,0 +1,73 @@
+/* Element Selector */
+body {
+    background-color: grey;
+    color:black;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+header h1 {
+    margin: 10px;
+    padding: 20px
+}
+
+a:hover {
+    color: azure;
+}
+
+hr {
+    margin: 10px 0 10px 0;
+}
+
+nav {
+    margin: 15px ;
+}
+nav h3 {
+    text-align: center;
+    margin: 0;
+}
+
+/* Class Selector */
+
+.navigation {
+    text-align: center;
+    text-decoration: none;
+}
+
+.navigation a{
+    color: goldenrod;
+}
+
+.border {
+    border: 5px solid;
+    border-radius: 10px;
+}
+
+.border header{
+    margin: 20px 0 20px 40px ;
+}
+
+.border main{
+    padding:  20px ;
+}
+
+.footerBox {
+    /* margin: 30px; */
+}
+.footerBox h3 {
+    margin: 40px;
+    text-align: center;
+}
+
+.footerBox p {
+    padding: 50px;
+    text-align: center;
+}
+
+.contacts {
+    text-align: center;
+}
+
+/* ID Selector */
+/* #green-background {
+    background-color:green;
+} */
