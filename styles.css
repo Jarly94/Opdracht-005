@@ -1,6 +1,6 @@
 body {
-    margin: 2%;
-    background-color: grey;
+    margin: 25px;
+    background-color: silver;
     color:black;
     font-family: Georgia, 'Times New Roman', Times, serif
 }
@@ -21,26 +21,43 @@ header h1 {
 }
 
 /* Navigation */
-div a:hover {
+
+/* Focussing on the 'ul' element (Unordered List)
+   Haalt de dots weg van de list, resetting de margin/padding, */
+nav ul {
+    list-style-type: none;           /* Removes the bullet points on the list */
+    padding: 0;                      /* Resets the value to 0 */
+    margin: 0;                      /* Resets the value to 0 */
+    overflow: hidden;               /* The overflow stays clipped, if it does overlap, stays hidden. */
+    background-color: gray;
+}
+
+/* Focussing on the 'li' element (List Items) */
+nav li {
+    float: left;                    /* Allows block-level elements to position next to each other. */
+    /* background-color: grey;*/    /* Sets background color (all the way as the width specify */
+}
+
+/* Focussing on the 'a' element (Hyperlinks) */
+nav a {
+    display: block;                 /*  */
+    padding: 10px 15px;             /* Creates spacing in between the Hyperlinks */
+    text-decoration: none;          /* Removes the underline */
     color: white;
 }
 
-nav {
-    margin: 15px ;
+nav a:hover:not(.activePage) {
+    /* color: goldenrod;            /* Color within text appears, when hover over */
+    background-color: goldenrod;  /* Color within background appears, when hover over */
 }
 
 nav h3 {
     text-align: center;
-    margin: 0;
 }
 
-.navigation {
-    text-align: center;
-    text-decoration: none;
-}
 
-.navigation a {
-    color: goldenrod;
+.activePage {
+    background-color: tan;
 }
 
 /* Main */
@@ -48,6 +65,7 @@ nav h3 {
     border: 5px solid;
     border-radius: 10px;
     width: 375px;
+    margin: 25px 0;
 }
 
 .favorites h2 {
@@ -59,12 +77,20 @@ nav h3 {
 }
 
 .aboutMe main {
-    width: 300px;
-    border: 5px solid;
+    /* width: 300px; */
+    margin: 15px 0;
+    padding: 15px;
+    /* border: 5px solid; */
+    /* border-radius: 10px; */
+}
+
+.aboutMe h3 {
+    padding-bottom: 30px;
+    text-align: center;
 }
 
 .aboutMe img{
-    
+
 }
 /* Footer */
 footer h3 {
